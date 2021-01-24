@@ -15,6 +15,7 @@ public class Zliczanie {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
        System.out.println("coś");    
         Scanner scan = new Scanner(System.in);
         System.out.println("Wpisz Plik aby liczyć słowa z pliku");
@@ -34,7 +35,6 @@ public class Zliczanie {
        }
         else{
             System.exit(1);
-        }
-    
+        }    
 }
 }
