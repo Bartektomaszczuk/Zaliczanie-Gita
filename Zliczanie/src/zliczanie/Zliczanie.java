@@ -15,7 +15,8 @@ public class Zliczanie {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("cos");
+       System.out.println("coś");
+
     }
     
 }
