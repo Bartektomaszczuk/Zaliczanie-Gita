@@ -15,8 +15,26 @@ public class Zliczanie {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       System.out.println("coś");
-
-    }
+       System.out.println("coś");    
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Wpisz Plik aby liczyć słowa z pliku");
+        System.out.println("Wpisz klawiatura aby liczyć słowa z klawiatury");
+        String opcja = scan.nextLine();
+       if("klawiatura".equals(opcja)) {
+            Scanner scan2 = new Scanner(System.in);
+ 
+            String wyrazy = scan2.nextLine();
+            int countWord = 0;
+ 
+            String[] wordList = wyrazy.split("\\s+");
+ 
+            countWord += wordList.length;
+ 
+            System.out.println("Liczba słów = " + countWord);
+       }
+        else{
+            System.exit(1);
+        }
     
+}
 }
